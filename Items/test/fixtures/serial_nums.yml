@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  supplier: MyString
+  status: MyString
+  lenders: MyString
+
+two:
+  description: MyString
+  supplier: MyString
+  status: MyString
+  lenders: MyString

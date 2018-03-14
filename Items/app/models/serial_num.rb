@@ -1,0 +1,2 @@
+class SerialNum < ApplicationRecord
+end
