@@ -1,2 +1,0 @@
-class SerialNum < ApplicationRecord
-end
