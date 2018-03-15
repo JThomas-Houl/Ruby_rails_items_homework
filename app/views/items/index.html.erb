@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <nav>
+            <a href = "items/new">add item</a>
+        </nav>
+    </head>
+    <body>
+        <div>
+            <h1> index </h1>
+        </div>
+
+       <table>
+            <thead>
+                <tr>
+                    <th>Serial Number </th>
+                    <th>Description </th> 
+                    <th>Suppiler </th>
+                    <th>Status </th>
+                    <th>Lender </th>
+                </tr>
+            </thead>
+            <tbody>
+                <%@item.each do |item|%> <!-- each item in the class of item grab the items-->
+                <tr>
+                    <td><%=item.serial_num%></td>
+                    <td><%=item.description%></td>
+                    <td><%=item.supplier%></td>
+                    <td><%=item.status%></td>
+                    <td><%=item.lender%></td>
+                </tr>
+                <%end%>
+                
+            </tbody>
+        </table>
+
+        
+
+    </body>
+</html>
