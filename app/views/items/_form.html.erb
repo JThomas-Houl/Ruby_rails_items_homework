@@ -1,0 +1,37 @@
+ <h1> Add new item or edit exstiting item </h1>
+            <!-- if you just want evaulate something and not print  then its <% "evaluate only"%>
+            if you want to evulate and print then its <%= "evaulate and print"%> -->
+
+            <!-- 
+            below is the same as a html form
+            <label>Name: </label>
+                <input type="text" name="name" value= "">  
+            -->
+
+            <%= form_for(@item) do |f| %>
+                <p>
+                <%= f.label :serial_num %><br>
+                <%= f.text_field :serial_num %>
+                </p>
+
+                <p>
+                <%= f.label :description %><br>
+                <%= f.text_field :description %>
+                </p>
+
+                <p>
+                <%= f.label :supplier %><br>
+                <%= f.text_field :supplier %>
+                </p>
+
+                <p>
+                <%= f.label :status %><br>
+                <%= f.text_field :status %>
+                </p>
+                <p>
+                <%= f.label :lender %><br>
+                <%= f.text_field :lender %>
+                </p>
+
+                <%= f.submit %>
+            <% end %>
